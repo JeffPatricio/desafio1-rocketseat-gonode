@@ -1,0 +1,16 @@
+<h1 style="margin-top: 5%; background-color: aquamarine;">Novo Usuário</h1>
+<form action="/check" method="POST" style="background-color: wheat;">
+  <label for=" age">Age</label><br>
+  <input type="number" min="1" step="1" id="age" name="age" /><br><br>
+  <button type="submit">Salvar</button>
+</form>
+
+
+<div style="background-color: teal;">
+  <h3>Histórico</h3>
+  <ul>
+    {% for age in historico %}
+    <li>{{age}}</li>
+    {% endfor %}
+  </ul>
+</div>
